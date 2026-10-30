@@ -1,4 +1,4 @@
-# app-tools
+# APP_TOOLS
 
 公開的小工具包，給網路受限的公司電腦直接下載 zip 使用。**這裡不放任何公司真實 IP、帳號、密碼或資料。**
 
@@ -9,6 +9,6 @@
 | 3 | BinMailPacker（exe 版） | BinMailPacker_exe.zip | v1.2.0（2026-10-30） | 同上，沒有 Python 的電腦用；兩版加密格式相同、可互解 |
 
 下載：點檔名 → 右上「Download raw file」，或
-`https://github.com/alienid4/app-tools/raw/main/<檔名>`
+`https://github.com/alienid4/APP_TOOLS/raw/main/<檔名>`
 
 使用說明在各 zip 裡（FtpCollect：使用說明.txt；BinMailPacker：README.txt）。
