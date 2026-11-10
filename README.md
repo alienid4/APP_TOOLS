@@ -7,6 +7,7 @@
 | 1 | FtpCollect | FtpCollect_py.zip | v1.0.2（2026-10-30） | 雙擊 run.bat 開視窗，帳號、密碼、目錄都在視窗設定；FTP 主機一對多唯讀收集 Serv-U／FileZilla 設定檔與 log（MFT 盤點用）；需 Windows＋Python 3.10+ |
 | 2 | BinMailPacker（Python 版） | BinMailPacker_py.zip | v1.2.0（2026-10-30） | 檔案壓縮＋加密＋切成 .bin，讓 Gmail 寄得出去；有 Python 用這包（雙擊 run.bat） |
 | 3 | BinMailPacker（exe 版） | BinMailPacker_exe.zip | v1.2.0（2026-10-30） | 同上，沒有 Python 的電腦用；兩版加密格式相同、可互解 |
+| 4 | FtpCollect（PowerShell 版） | FtpCollect_ps.zip | v1.0（2026-11-10） | **主機沒有 Python 用這包**：在 FTP 主機本機雙擊 run.bat，唯讀收集 Serv-U／FileZilla 設定檔（遮密碼）、近 90 天 log、帳號目錄檔名清單、版本／監聽埠／憑證到期；有執行紀錄與錯誤紀錄；不刪除、不修改主機任何東西 |
 
 下載：點檔名 → 右上「Download raw file」，或
 `https://github.com/alienid4/APP_TOOLS/raw/main/<檔名>`
