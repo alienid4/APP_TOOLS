@@ -4,7 +4,7 @@
 
 | # | 工具 | 檔案 | 版本 | 用途 |
 |---|---|---|---|---|
-| 1 | FtpCollect | FtpCollect_py.zip | v1.0.2（2026-10-30） | 雙擊 run.bat 開視窗，帳號、密碼、目錄都在視窗設定；FTP 主機一對多唯讀收集 Serv-U／FileZilla 設定檔與 log（MFT 盤點用）；需 Windows＋Python 3.10+ |
+| 1 | FtpMultiPull（Python 版，一台電腦遠端抓多台；舊名 FtpCollect） | FtpMultiPull_py_v1.0.2.zip | v1.0.2（2026-10-30） | 雙擊 run.bat 開視窗，帳號、密碼、目錄都在視窗設定；FTP 主機一對多唯讀收集 Serv-U／FileZilla 設定檔與 log（MFT 盤點用）；需 Windows＋Python 3.10+ |
 | 2 | BinMailPacker（Python 版） | BinMailPacker_py.zip | v1.2.0（2026-10-30） | 檔案壓縮＋加密＋切成 .bin，讓 Gmail 寄得出去；有 Python 用這包（雙擊 run.bat） |
 | 3 | BinMailPacker（exe 版） | BinMailPacker_exe.zip | v1.2.0（2026-10-30） | 同上，沒有 Python 的電腦用；兩版加密格式相同、可互解 |
 | 4 | FtpCollect（PowerShell 版） | FtpCollectData_v1.3.6.zip | v1.3.6（2026-11-13） | **主機沒有 Python 用這包**（v1.3.6：帳號追蹤加強（讀不懂的行列出、完整 CSV、尖峰每分鐘、失敗與續傳）；v1.3.5：多「帳號追蹤.bat」，查單一帳號某天的行為（每小時次數、來源 IP、重複下載的檔）；v1.3.4：不是系統管理員就停下來不跑；FTP 連不上倒數 10 秒自動改成只在本機收集；v1.3：在主機上直接算好 log 彙總表，只上傳彙總表，log 副本留在主機的結果資料夾；ftpid.txt 設 upload_logs=1 才連 log 一起傳；須搭配 FtpReport v0.10.2 以上；v1.2.1：跑完可自動用 FTP 上傳結果（填 ftpid.txt，遠端自動建「日期／結果資料夾」、逐檔核對大小、預設限速每秒 2 MB；不在主機上壓縮）；結束時印出總時間與各段時間；v1.2.0：快速模式，FileZilla log 精簡與 log 統計快約 10 倍、結果完全相同，預設讀滿 90 天；主機不允許時自動改一般模式並維持 1 GB 上限；log 日期認得「上午／下午」；讀大 log 時每 5 秒顯示進度與約剩幾分鐘；讀取上限以整天為單位；v1.1.10 起認得中文地區設定的 FileZilla 0.9 log 時間「上午／下午」；支援 Serv-U；FileZilla log 預設精簡複製，大幅縮小且報表次數不變；-MaxLogGB 可設讀取上限，超過就標「log 抽樣」；須搭配 FtpReport v0.9.16 以上）：在 FTP 主機本機以系統管理員身分雙擊 run.bat，唯讀收集 Serv-U／FileZilla 設定檔（遮密碼）、近 90 天 log（遮密碼）、帳號目錄與第一層子目錄摘要（只算 90 天內，不含完整檔名）、證據品質、版本／監聽埠／憑證／防火牆／排程；結果分 OK／PARTIAL／FAIL；不刪除、不修改主機任何東西 |
