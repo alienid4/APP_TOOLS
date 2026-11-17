@@ -13,7 +13,8 @@
 | 7 | ADList | ADList_v1.0.1.zip | v1.0.1（2026-11-12） | 在加了網域的 Windows 電腦雙擊 ADList.bat，選範圍（1 整個網域／2 資訊管理處／3 從清單選部門，可多選／4 自訂關鍵字），產出 AD 帳號清單 CSV（項次、帳號、姓名、部門、職稱、員編、Email、啟用／停用、最後登入、建立日期、密碼最後變更、OU）；唯讀查詢、不改 AD；不用另外安裝套件 |
 | 8 | PeakCheck（尖峰核對） | PeakCheck_v1.0.0.zip | v1.0.0（2026-11-13） | 在 FTP 主機雙擊「尖峰核對.bat」，輸入帳號、日期、哪一分鐘（預設可直接按 Enter），從 FileZilla log 數出那一分鐘的下載總數、每個來源 IP 各幾次與主機名稱、下載最多那台每一秒幾次、10 行原始紀錄；只讀 log，結果存成文字檔 |
 | 9 | VcopsMenu（vCOps 手動收集選單） | VcopsMenu_v1.0.1.zip | v1.0.1（2026-11-16） | v1.0.1：改 Big5 修中文亂碼、未跑過的排程寫「尚未跑過」。在 vCOps 跳板機雙擊 vcops_menu.bat，選 01～07：開盤尖峰、VMware 每日檢查（補跑排程）、VM 清單、開輸出資料夾、看最近批次、看排程狀態、怎麼送到 WEBIT；第一次執行輸入 vCOps 位址後記在本機；只讀 vCOps、不改任何東西、不用 Bypass |
-| 10 | UnityCheck（Unity 儲存每日檢查） | UnityCheck_v1.0.0.zip | v1.0.0（2026-11-17） | 在能連到 Unity 管理介面的電腦雙擊 unity_check.bat，輸入位址（第一次）與唯讀帳號密碼，唯讀檢查：系統健康、未處理告警（警示訊息／異常通知信）、今天的錯誤事件（Error Log）、Pool 健康與使用率、告警寄信設定；結論正常／注意／異常／查不到，結果存文字檔＋CSV；只用 GET 讀 REST API，不改任何設定、密碼不存檔 |
+| 10 | UnityCheck（舊版，請改用 #11 UnityDaily） | UnityCheck_v1.0.0.zip | v1.0.0（2026-11-17） | 在能連到 Unity 管理介面的電腦雙擊 unity_check.bat，輸入位址（第一次）與唯讀帳號密碼，唯讀檢查：系統健康、未處理告警（警示訊息／異常通知信）、今天的錯誤事件（Error Log）、Pool 健康與使用率、告警寄信設定；結論正常／注意／異常／查不到，結果存文字檔＋CSV；只用 GET 讀 REST API，不改任何設定、密碼不存檔 |
+| 11 | UnityDaily（Unity 儲存每日檢查，取代 UnityCheck） | UnityDaily_v1.3.1.zip | v1.3.1（2026-11-17） | 雙擊 unity_daily.bat，依 ip.list 逐台唯讀檢查 Dell EMC Unity：系統健康、告警（警示訊息）、期間事件（Error Log）、寄信設定、Pool、LUN 空間、檔案系統、硬體、複寫；產 HTML（第一頁「須回報／須補查／須覆核／可結案」＋回報草稿，表格可排序、數字可點進明細）＋CSV；ip.list 密碼首次執行自動 Windows 加密；第一個帳密錯誤就整批停止；只用 GET、不改設備。SHA256 7329951b6ec6ad73bbc138ac0b25ea14d2aab6ee943f0d12dc8ebb979080e547 |
 
 下載：點檔名 → 右上「Download raw file」，或
 `https://github.com/alienid4/APP_TOOLS/raw/main/<檔名>`
