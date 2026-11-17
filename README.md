@@ -14,7 +14,7 @@
 | 8 | PeakCheck（尖峰核對） | PeakCheck_v1.0.0.zip | v1.0.0（2026-11-13） | 在 FTP 主機雙擊「尖峰核對.bat」，輸入帳號、日期、哪一分鐘（預設可直接按 Enter），從 FileZilla log 數出那一分鐘的下載總數、每個來源 IP 各幾次與主機名稱、下載最多那台每一秒幾次、10 行原始紀錄；只讀 log，結果存成文字檔 |
 | 9 | VcopsMenu（vCOps 手動收集選單） | VcopsMenu_v1.0.1.zip | v1.0.1（2026-11-16） | v1.0.1：改 Big5 修中文亂碼、未跑過的排程寫「尚未跑過」。在 vCOps 跳板機雙擊 vcops_menu.bat，選 01～07：開盤尖峰、VMware 每日檢查（補跑排程）、VM 清單、開輸出資料夾、看最近批次、看排程狀態、怎麼送到 WEBIT；第一次執行輸入 vCOps 位址後記在本機；只讀 vCOps、不改任何東西、不用 Bypass |
 | 11 | DailyCheck（每日檢查工具包：0 全部、1 WhatsUp、2 VMware、3 Storage/Unity、4 AD net time） | DailyCheck_v1.9.8.zip | v1.9.8（2026-11-17） | 雙擊「每日檢查選單.bat」（仿 SMIT，↑↓＋Enter）：1 WhatsUp 監控（離線、維護、CPU、記憶體；SWAP 人工）、2 VMware（ESXi、Datastore 剩餘 <600GB 與空間預估、警示）、3 Storage（Dell EMC Unity）、4 AD net time；0 依序全跑並產生一份總覽報告。設備清單.csv 用 Excel 編輯，密碼首次執行自動 Windows 加密；每項產生可貼進每日檢查表的「檢查表文字」、HTML＋CSV 報告；只讀不改設備。SHA256 e572690f0880b8e0a06f7a499e339faa8c8f000ef9211ed42699cb97634b5ebe |
-| 12 | DiskHousekeeping（磁碟盤點） | DiskHousekeeping_v1.1.0.zip | v1.1.0（2026-11-17） | 在 Windows 主機用 PowerShell 執行 Get-DiskHousekeeping.ps1：掃描使用率 ≥80% 的本機磁碟，列出最佔空間的目錄、舊檔、像備份的目錄，報告寫到同目錄 Reports\；執行中顯示時間進度 %，每 30 秒心跳；只讀不刪（建議先移出或壓縮觀察，再依核准程序處理）。SHA256 47ac94ac82b752246c94c5d61e0f54666fa33e8a55929cb4895c5894ecc069a0 |
+| 12 | DiskHousekeeping（磁碟盤點） | DiskHousekeeping_v1.2.0.zip | v1.2.0（2026-11-17） | 在 Windows 主機用 PowerShell 執行 Get-DiskHousekeeping.ps1：掃描使用率 ≥80% 的本機磁碟，列出最佔空間的目錄、舊檔、像備份的目錄，報告寫到同目錄 Reports\；執行中顯示時間進度 %，每 30 秒心跳；最後一行顯示完成度（全部掃完＝100%，時間到則估算 %）；只讀不刪（建議先移出或壓縮觀察，再依核准程序處理）。SHA256 9c0fabb6cd8fc5176cd5fa0da9f08010f1baab26910815f3a84c69baeed61868 |
 
 下載：點檔名 → 右上「Download raw file」，或
 `https://github.com/alienid4/APP_TOOLS/raw/main/<檔名>`
