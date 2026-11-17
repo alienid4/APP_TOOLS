@@ -13,7 +13,7 @@
 | 7 | ADList | ADList_v1.0.1.zip | v1.0.1（2026-11-12） | 在加了網域的 Windows 電腦雙擊 ADList.bat，選範圍（1 整個網域／2 資訊管理處／3 從清單選部門，可多選／4 自訂關鍵字），產出 AD 帳號清單 CSV（項次、帳號、姓名、部門、職稱、員編、Email、啟用／停用、最後登入、建立日期、密碼最後變更、OU）；唯讀查詢、不改 AD；不用另外安裝套件 |
 | 8 | PeakCheck（尖峰核對） | PeakCheck_v1.0.0.zip | v1.0.0（2026-11-13） | 在 FTP 主機雙擊「尖峰核對.bat」，輸入帳號、日期、哪一分鐘（預設可直接按 Enter），從 FileZilla log 數出那一分鐘的下載總數、每個來源 IP 各幾次與主機名稱、下載最多那台每一秒幾次、10 行原始紀錄；只讀 log，結果存成文字檔 |
 | 9 | VcopsMenu（vCOps 手動收集選單） | VcopsMenu_v1.0.1.zip | v1.0.1（2026-11-16） | v1.0.1：改 Big5 修中文亂碼、未跑過的排程寫「尚未跑過」。在 vCOps 跳板機雙擊 vcops_menu.bat，選 01～07：開盤尖峰、VMware 每日檢查（補跑排程）、VM 清單、開輸出資料夾、看最近批次、看排程狀態、怎麼送到 WEBIT；第一次執行輸入 vCOps 位址後記在本機；只讀 vCOps、不改任何東西、不用 Bypass |
-| 11 | DailyCheck（每日檢查工具包：0 全部、1 WhatsUp、2 VMware、3 Storage/Unity、4 AD net time） | DailyCheck_v1.9.5.zip | v1.9.5（2026-11-17） | 雙擊「每日檢查選單.bat」（仿 SMIT，↑↓＋Enter）：1 WhatsUp 監控（離線、維護、CPU、記憶體；SWAP 人工）、2 VMware（ESXi、Datastore 剩餘 <600GB 與空間預估、警示）、3 Storage（Dell EMC Unity）、4 AD net time；0 依序全跑並產生一份總覽報告。設備清單.csv 用 Excel 編輯，密碼首次執行自動 Windows 加密；每項產生可貼進每日檢查表的「檢查表文字」、HTML＋CSV 報告；只讀不改設備。SHA256 03748a2cbbd20d2a52683f26a6f1c29db8f0f8734617996577c97b0a1434cf6c |
+| 11 | DailyCheck（每日檢查工具包：0 全部、1 WhatsUp、2 VMware、3 Storage/Unity、4 AD net time） | DailyCheck_v1.9.6.zip | v1.9.6（2026-11-17） | 雙擊「每日檢查選單.bat」（仿 SMIT，↑↓＋Enter）：1 WhatsUp 監控（離線、維護、CPU、記憶體；SWAP 人工）、2 VMware（ESXi、Datastore 剩餘 <600GB 與空間預估、警示）、3 Storage（Dell EMC Unity）、4 AD net time；0 依序全跑並產生一份總覽報告。設備清單.csv 用 Excel 編輯，密碼首次執行自動 Windows 加密；每項產生可貼進每日檢查表的「檢查表文字」、HTML＋CSV 報告；只讀不改設備。SHA256 46086a2d3c5028da220afe87719cb0e0fae5121c8acf1d07255f84f172fed6f9 |
 
 下載：點檔名 → 右上「Download raw file」，或
 `https://github.com/alienid4/APP_TOOLS/raw/main/<檔名>`
